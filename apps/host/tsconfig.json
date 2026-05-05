@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "../..",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "#protocol": [
+        "../../packages/protocol/src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "src/main/**/*.ts",
+    "../../packages/protocol/src/**/*.ts"
+  ]
+}

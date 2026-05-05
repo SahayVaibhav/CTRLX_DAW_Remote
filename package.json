@@ -1,0 +1,21 @@
+{
+  "name": "ctrlx-dev-stage",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build:shared": "npm run build --workspace @ctrlx/shared-protocol",
+    "dev:host": "npm run build:shared && npm run dev --workspace @ctrlx/host",
+    "dev:client": "npm run build:shared && npm run dev --workspace @ctrlx/client",
+    "dev:observe:logic": "node ./scripts/observe-logic-ui.mjs",
+    "build": "npm run build --workspaces",
+    "package:host:mac": "npm run build:shared && npm run package:mac --workspace @ctrlx/host",
+    "dist:host:mac": "npm run build:shared && npm run dist:mac --workspace @ctrlx/host"
+  },
+  "devDependencies": {
+    "7zip-bin": "^5.2.0"
+  }
+}

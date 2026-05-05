@@ -1,0 +1,266 @@
+[
+  {
+    "id": "logic_kcs.33.region",
+    "logicCommandId": "33",
+    "label": "Region",
+    "shortcut": null,
+    "category": "General",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.51.catch",
+    "logicCommandId": "51",
+    "label": "Catch",
+    "shortcut": null,
+    "category": "Transport",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.110.quantize",
+    "logicCommandId": "110",
+    "label": "Quantize",
+    "shortcut": null,
+    "category": "Editing",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.117.hide",
+    "logicCommandId": "117",
+    "label": "Hide",
+    "shortcut": null,
+    "category": "Navigation",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.208.names",
+    "logicCommandId": "208",
+    "label": "Names",
+    "shortcut": null,
+    "category": "Navigation",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.209.rulers",
+    "logicCommandId": "209",
+    "label": "Rulers",
+    "shortcut": null,
+    "category": "Navigation",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.324.legato",
+    "logicCommandId": "324",
+    "label": "Legato",
+    "shortcut": null,
+    "category": "Editing",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.475.event",
+    "logicCommandId": "475",
+    "label": "Event",
+    "shortcut": null,
+    "category": "Editing",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.532.tap",
+    "logicCommandId": "532",
+    "label": "Tap",
+    "shortcut": null,
+    "category": "Transport",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.577.midi",
+    "logicCommandId": "577",
+    "label": "MIDI ~",
+    "shortcut": null,
+    "category": "Tracks",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.893.global",
+    "logicCommandId": "893",
+    "label": "Global",
+    "shortcut": null,
+    "category": "Navigation",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1012.read_off",
+    "logicCommandId": "1012",
+    "label": "Read/Off",
+    "shortcut": null,
+    "category": "Mixer",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1014.touch_read",
+    "logicCommandId": "1014",
+    "label": "Touch/Read",
+    "shortcut": null,
+    "category": "Mixer",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1019.all_off",
+    "logicCommandId": "1019",
+    "label": "All Off",
+    "shortcut": null,
+    "category": "Mixer",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1020.all_read",
+    "logicCommandId": "1020",
+    "label": "All Read",
+    "shortcut": null,
+    "category": "Mixer",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1040.clear_solo",
+    "logicCommandId": "1040",
+    "label": "Clear Solo",
+    "shortcut": null,
+    "category": "Mixer",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1221.to_end",
+    "logicCommandId": "1221",
+    "label": "To End",
+    "shortcut": null,
+    "category": "Transport",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1255.plug_ins",
+    "logicCommandId": "1255",
+    "label": "Plug-Ins",
+    "shortcut": null,
+    "category": "Mixer",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1345.fade_last",
+    "logicCommandId": "1345",
+    "label": "fade last",
+    "shortcut": null,
+    "category": "Editing",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1349.fade",
+    "logicCommandId": "1349",
+    "label": "fade",
+    "shortcut": null,
+    "category": "Editing",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1710.hide_view",
+    "logicCommandId": "1710",
+    "label": "Hide/View",
+    "shortcut": null,
+    "category": "Navigation",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1795.audio",
+    "logicCommandId": "1795",
+    "label": "+ Audio",
+    "shortcut": null,
+    "category": "Tracks",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1796.instrument",
+    "logicCommandId": "1796",
+    "label": "+ Instrument",
+    "shortcut": null,
+    "category": "Tracks",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1797.drummer",
+    "logicCommandId": "1797",
+    "label": "+ Drummer",
+    "shortcut": null,
+    "category": "Tracks",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1798.midi",
+    "logicCommandId": "1798",
+    "label": "+ MIDI",
+    "shortcut": null,
+    "category": "Tracks",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1903.prelisten",
+    "logicCommandId": "1903",
+    "label": "prelisten",
+    "shortcut": null,
+    "category": "Mixer",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.1905.sbprocs",
+    "logicCommandId": "1905",
+    "label": "SBProcs",
+    "shortcut": null,
+    "category": "General",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.2000.midi",
+    "logicCommandId": "2000",
+    "label": "MIDI",
+    "shortcut": null,
+    "category": "Tracks",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.2002.audio",
+    "logicCommandId": "2002",
+    "label": "Audio",
+    "shortcut": null,
+    "category": "Tracks",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.2003.instrument",
+    "logicCommandId": "2003",
+    "label": "Instrument",
+    "shortcut": null,
+    "category": "Tracks",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.2004.aux",
+    "logicCommandId": "2004",
+    "label": "Aux",
+    "shortcut": null,
+    "category": "Tracks",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.2006.output",
+    "logicCommandId": "2006",
+    "label": "Output",
+    "shortcut": null,
+    "category": "Tracks",
+    "source": "logic_kcs"
+  },
+  {
+    "id": "logic_kcs.2276.repeat",
+    "logicCommandId": "2276",
+    "label": "Repeat",
+    "shortcut": null,
+    "category": "Transport",
+    "source": "logic_kcs"
+  }
+]

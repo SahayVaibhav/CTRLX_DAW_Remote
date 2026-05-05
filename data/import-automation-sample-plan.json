@@ -1,0 +1,141 @@
+{
+  "source": "import_automation",
+  "items": [
+    {
+      "originalFilename": "01_KICK_IN.wav",
+      "normalizedFilename": "01 kick in",
+      "detectedCategory": "drums",
+      "cleanTrackName": "Kick In",
+      "assignedColor": "red",
+      "confidence": "high"
+    },
+    {
+      "originalFilename": "snare_top_take03.wav",
+      "normalizedFilename": "snare top take03",
+      "detectedCategory": "drums",
+      "cleanTrackName": "Snare Top",
+      "assignedColor": "red",
+      "confidence": "high"
+    },
+    {
+      "originalFilename": "Lead_Vox_Final_02.wav",
+      "normalizedFilename": "lead vox final 02",
+      "detectedCategory": "vocals",
+      "cleanTrackName": "Lead Vox",
+      "assignedColor": "blue",
+      "confidence": "high"
+    },
+    {
+      "originalFilename": "BASS_DI_v4.aif",
+      "normalizedFilename": "bass di v4",
+      "detectedCategory": "bass",
+      "cleanTrackName": "Bass DI",
+      "assignedColor": "green",
+      "confidence": "high"
+    },
+    {
+      "originalFilename": "rhythm_gtr_L_01.wav",
+      "normalizedFilename": "rhythm gtr l 01",
+      "detectedCategory": "guitar",
+      "cleanTrackName": "Rhythm Gtr L",
+      "assignedColor": "yellow",
+      "confidence": "high"
+    },
+    {
+      "originalFilename": "Rhodes_Main.wav",
+      "normalizedFilename": "rhodes main",
+      "detectedCategory": "keys",
+      "cleanTrackName": "Rhodes Main",
+      "assignedColor": "cyan",
+      "confidence": "high"
+    },
+    {
+      "originalFilename": "synth_pad_wide_02.wav",
+      "normalizedFilename": "synth pad wide 02",
+      "detectedCategory": "synth",
+      "cleanTrackName": "Synth Pad Wide",
+      "assignedColor": "purple",
+      "confidence": "high"
+    },
+    {
+      "originalFilename": "big_riser_fx_07.wav",
+      "normalizedFilename": "big riser fx 07",
+      "detectedCategory": "fx",
+      "cleanTrackName": "Big Riser FX",
+      "assignedColor": "pink",
+      "confidence": "high"
+    },
+    {
+      "originalFilename": "room_ambience_stereo.wav",
+      "normalizedFilename": "room ambience stereo",
+      "detectedCategory": "ambience",
+      "cleanTrackName": "Room Ambience",
+      "assignedColor": "gray",
+      "confidence": "high"
+    },
+    {
+      "originalFilename": "mystery_audio_12.wav",
+      "normalizedFilename": "mystery audio 12",
+      "detectedCategory": "unknown",
+      "cleanTrackName": "Mystery Audio",
+      "assignedColor": "neutral",
+      "confidence": "low"
+    },
+    {
+      "originalFilename": "audio_01.wav",
+      "normalizedFilename": "audio 01",
+      "detectedCategory": "unknown",
+      "cleanTrackName": "Audio",
+      "assignedColor": "neutral",
+      "confidence": "low"
+    },
+    {
+      "originalFilename": "track final.wav",
+      "normalizedFilename": "track final",
+      "detectedCategory": "unknown",
+      "cleanTrackName": "Track",
+      "assignedColor": "neutral",
+      "confidence": "low"
+    },
+    {
+      "originalFilename": "stem 3.wav",
+      "normalizedFilename": "stem 3",
+      "detectedCategory": "unknown",
+      "cleanTrackName": "Stem",
+      "assignedColor": "neutral",
+      "confidence": "low"
+    },
+    {
+      "originalFilename": "print.wav",
+      "normalizedFilename": "print",
+      "detectedCategory": "unknown",
+      "cleanTrackName": "Imported Audio",
+      "assignedColor": "neutral",
+      "confidence": "low"
+    },
+    {
+      "originalFilename": "lead_vox_fx.wav",
+      "normalizedFilename": "lead vox fx",
+      "detectedCategory": "vocals",
+      "cleanTrackName": "Lead Vox FX",
+      "assignedColor": "blue",
+      "confidence": "medium"
+    },
+    {
+      "originalFilename": "bass_synth.wav",
+      "normalizedFilename": "bass synth",
+      "detectedCategory": "bass",
+      "cleanTrackName": "Bass Synth",
+      "assignedColor": "green",
+      "confidence": "medium"
+    },
+    {
+      "originalFilename": "snare_room.wav",
+      "normalizedFilename": "snare room",
+      "detectedCategory": "drums",
+      "cleanTrackName": "Snare Room",
+      "assignedColor": "red",
+      "confidence": "medium"
+    }
+  ]
+}

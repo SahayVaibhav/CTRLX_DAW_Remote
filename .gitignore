@@ -1,0 +1,16 @@
+node_modules/
+apps/*/node_modules/
+
+dist/
+apps/*/dist/
+packages/*/dist/
+
+release/
+apps/*/release/
+
+.DS_Store
+coverage/
+.next/
+
+codex.diff
+testcommit

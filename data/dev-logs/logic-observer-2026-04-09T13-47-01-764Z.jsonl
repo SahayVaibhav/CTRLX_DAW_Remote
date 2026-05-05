@@ -1,0 +1,3 @@
+{"type":"observer_started","at":"2026-04-09T13:47:01.771Z","intervalMs":250,"durationMs":800,"heartbeatMs":5000,"outputPath":"/Users/kuhusingh/Documents/New codex project/CTRLX_Dev_Stage/data/dev-logs/logic-observer-2026-04-09T13-47-01-764Z.jsonl"}
+{"type":"state_change","at":"2026-04-09T13:47:01.773Z","state":{"frontApp":"Code","logicRunning":true,"logicFrontmost":false,"logicWindowCount":1,"logicFrontWindow":"Untitled 2 - Tracks","logicWindowNames":["Untitled 2 - Tracks"],"logicSheetNames":[],"logicFileMenuAvailable":true,"sampleError":"none","dialogs":{"openFile":false,"chooseProject":false,"createTrack":false,"rename":false,"color":false}}}
+{"type":"observer_stopped","at":"2026-04-09T13:47:02.649Z","reason":"duration_elapsed"}

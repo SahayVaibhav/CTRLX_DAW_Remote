@@ -1,0 +1,60 @@
+[
+  {
+    "gesture": "one_finger_drag",
+    "targetKind": "screen_input",
+    "commandId": "pointer_move",
+    "logicCatalogId": null,
+    "notes": "Preserves the existing cursor movement baseline."
+  },
+  {
+    "gesture": "double_tap",
+    "targetKind": "screen_input",
+    "commandId": "double_tap",
+    "logicCatalogId": null,
+    "notes": "Mapped to real host double click at the viewer coordinates."
+  },
+  {
+    "gesture": "pinch_out",
+    "targetKind": "screen_input",
+    "commandId": "gesture_zoom",
+    "logicCatalogId": null,
+    "params": {
+      "direction": "in"
+    },
+    "notes": "Positive pinch distance delta triggers zoom in."
+  },
+  {
+    "gesture": "pinch_in",
+    "targetKind": "screen_input",
+    "commandId": "gesture_zoom",
+    "logicCatalogId": null,
+    "params": {
+      "direction": "out"
+    },
+    "notes": "Negative pinch distance delta triggers zoom out."
+  },
+  {
+    "gesture": "two_finger_pan",
+    "targetKind": "screen_input",
+    "commandId": "gesture_pan",
+    "logicCatalogId": null,
+    "notes": "Two-finger centroid movement pans the Logic view."
+  },
+  {
+    "gesture": "two_finger_region_move",
+    "targetKind": "screen_input",
+    "commandId": "gesture_region_move",
+    "logicCatalogId": null,
+    "params": {
+      "phases": "start,move,end"
+    },
+    "notes": "Two-finger hold and move emulates click-hold-drag-release on the host."
+  },
+  {
+    "gesture": "two_finger_tap",
+    "targetKind": "unassigned",
+    "commandId": null,
+    "logicCatalogId": null,
+    "notes": "Reserved for a future action once a safe executable target exists."
+  }
+]

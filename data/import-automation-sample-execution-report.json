@@ -1,0 +1,1051 @@
+{
+  "source": "import_automation_execution",
+  "totalItems": 17,
+  "successfulItems": 12,
+  "failedItems": 5,
+  "totalActions": 34,
+  "successfulActions": 29,
+  "failedActions": 5,
+  "renamesSucceeded": 17,
+  "renamesFailed": 0,
+  "colorChangesSucceeded": 12,
+  "colorChangesFailed": 5,
+  "items": [
+    {
+      "originalFilename": "01_KICK_IN.wav",
+      "cleanTrackName": "Kick In",
+      "assignedColor": "red",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": "Audio 1",
+          "intendedName": "Kick In",
+          "intendedColor": null,
+          "actualName": "Kick In",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": "Audio 1",
+          "intendedName": "Kick In",
+          "intendedColor": "red",
+          "actualName": "Audio 1",
+          "actualColor": "red",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": "Audio 1",
+        "intendedName": "Kick In",
+        "intendedColor": null,
+        "actualName": "Kick In",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": "Audio 1",
+        "intendedName": "Kick In",
+        "intendedColor": "red",
+        "actualName": "Audio 1",
+        "actualColor": "red",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "snare_top_take03.wav",
+      "cleanTrackName": "Snare Top",
+      "assignedColor": "red",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": "Audio 2",
+          "intendedName": "Snare Top",
+          "intendedColor": null,
+          "actualName": "Snare Top",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": "Audio 2",
+          "intendedName": "Snare Top",
+          "intendedColor": "red",
+          "actualName": "Audio 2",
+          "actualColor": "red",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": "Audio 2",
+        "intendedName": "Snare Top",
+        "intendedColor": null,
+        "actualName": "Snare Top",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": "Audio 2",
+        "intendedName": "Snare Top",
+        "intendedColor": "red",
+        "actualName": "Audio 2",
+        "actualColor": "red",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "Lead_Vox_Final_02.wav",
+      "cleanTrackName": "Lead Vox",
+      "assignedColor": "blue",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": "Audio 3",
+          "intendedName": "Lead Vox",
+          "intendedColor": null,
+          "actualName": "Lead Vox",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": "Audio 3",
+          "intendedName": "Lead Vox",
+          "intendedColor": "blue",
+          "actualName": "Audio 3",
+          "actualColor": "blue",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": "Audio 3",
+        "intendedName": "Lead Vox",
+        "intendedColor": null,
+        "actualName": "Lead Vox",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": "Audio 3",
+        "intendedName": "Lead Vox",
+        "intendedColor": "blue",
+        "actualName": "Audio 3",
+        "actualColor": "blue",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "BASS_DI_v4.aif",
+      "cleanTrackName": "Bass DI",
+      "assignedColor": "green",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": "Audio 4",
+          "intendedName": "Bass DI",
+          "intendedColor": null,
+          "actualName": "Bass DI",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": "Audio 4",
+          "intendedName": "Bass DI",
+          "intendedColor": "green",
+          "actualName": "Audio 4",
+          "actualColor": "green",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": "Audio 4",
+        "intendedName": "Bass DI",
+        "intendedColor": null,
+        "actualName": "Bass DI",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": "Audio 4",
+        "intendedName": "Bass DI",
+        "intendedColor": "green",
+        "actualName": "Audio 4",
+        "actualColor": "green",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "rhythm_gtr_L_01.wav",
+      "cleanTrackName": "Rhythm Gtr L",
+      "assignedColor": "yellow",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Rhythm Gtr L",
+          "intendedColor": null,
+          "actualName": "Rhythm Gtr L",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Rhythm Gtr L",
+          "intendedColor": "yellow",
+          "actualName": null,
+          "actualColor": "yellow",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Rhythm Gtr L",
+        "intendedColor": null,
+        "actualName": "Rhythm Gtr L",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Rhythm Gtr L",
+        "intendedColor": "yellow",
+        "actualName": null,
+        "actualColor": "yellow",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "Rhodes_Main.wav",
+      "cleanTrackName": "Rhodes Main",
+      "assignedColor": "cyan",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Rhodes Main",
+          "intendedColor": null,
+          "actualName": "Rhodes Main",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Rhodes Main",
+          "intendedColor": "cyan",
+          "actualName": null,
+          "actualColor": "cyan",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Rhodes Main",
+        "intendedColor": null,
+        "actualName": "Rhodes Main",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Rhodes Main",
+        "intendedColor": "cyan",
+        "actualName": null,
+        "actualColor": "cyan",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "synth_pad_wide_02.wav",
+      "cleanTrackName": "Synth Pad Wide",
+      "assignedColor": "purple",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Synth Pad Wide",
+          "intendedColor": null,
+          "actualName": "Synth Pad Wide",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Synth Pad Wide",
+          "intendedColor": "purple",
+          "actualName": null,
+          "actualColor": "purple",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Synth Pad Wide",
+        "intendedColor": null,
+        "actualName": "Synth Pad Wide",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Synth Pad Wide",
+        "intendedColor": "purple",
+        "actualName": null,
+        "actualColor": "purple",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "big_riser_fx_07.wav",
+      "cleanTrackName": "Big Riser FX",
+      "assignedColor": "pink",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Big Riser FX",
+          "intendedColor": null,
+          "actualName": "Big Riser FX",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Big Riser FX",
+          "intendedColor": "pink",
+          "actualName": null,
+          "actualColor": "pink",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Big Riser FX",
+        "intendedColor": null,
+        "actualName": "Big Riser FX",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Big Riser FX",
+        "intendedColor": "pink",
+        "actualName": null,
+        "actualColor": "pink",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "room_ambience_stereo.wav",
+      "cleanTrackName": "Room Ambience",
+      "assignedColor": "gray",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Room Ambience",
+          "intendedColor": null,
+          "actualName": "Room Ambience",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Room Ambience",
+          "intendedColor": "gray",
+          "actualName": null,
+          "actualColor": "gray",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Room Ambience",
+        "intendedColor": null,
+        "actualName": "Room Ambience",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Room Ambience",
+        "intendedColor": "gray",
+        "actualName": null,
+        "actualColor": "gray",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "mystery_audio_12.wav",
+      "cleanTrackName": "Mystery Audio",
+      "assignedColor": "neutral",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Mystery Audio",
+          "intendedColor": null,
+          "actualName": "Mystery Audio",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": false,
+          "status": "failed",
+          "previousName": null,
+          "intendedName": "Mystery Audio",
+          "intendedColor": "neutral",
+          "actualName": null,
+          "actualColor": null,
+          "message": "Skipped track color assignment.",
+          "reason": "Color assignment skipped because category is unknown."
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Mystery Audio",
+        "intendedColor": null,
+        "actualName": "Mystery Audio",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": false,
+        "status": "failed",
+        "previousName": null,
+        "intendedName": "Mystery Audio",
+        "intendedColor": "neutral",
+        "actualName": null,
+        "actualColor": null,
+        "message": "Skipped track color assignment.",
+        "reason": "Color assignment skipped because category is unknown."
+      },
+      "ok": false,
+      "completedActions": 1,
+      "failedActions": 1,
+      "summary": "Completed 1/2 actions; 1 failed."
+    },
+    {
+      "originalFilename": "audio_01.wav",
+      "cleanTrackName": "Audio",
+      "assignedColor": "neutral",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Audio",
+          "intendedColor": null,
+          "actualName": "Audio",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": false,
+          "status": "failed",
+          "previousName": null,
+          "intendedName": "Audio",
+          "intendedColor": "neutral",
+          "actualName": null,
+          "actualColor": null,
+          "message": "Skipped track color assignment.",
+          "reason": "Color assignment skipped because category is unknown."
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Audio",
+        "intendedColor": null,
+        "actualName": "Audio",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": false,
+        "status": "failed",
+        "previousName": null,
+        "intendedName": "Audio",
+        "intendedColor": "neutral",
+        "actualName": null,
+        "actualColor": null,
+        "message": "Skipped track color assignment.",
+        "reason": "Color assignment skipped because category is unknown."
+      },
+      "ok": false,
+      "completedActions": 1,
+      "failedActions": 1,
+      "summary": "Completed 1/2 actions; 1 failed."
+    },
+    {
+      "originalFilename": "track final.wav",
+      "cleanTrackName": "Track",
+      "assignedColor": "neutral",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Track",
+          "intendedColor": null,
+          "actualName": "Track",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": false,
+          "status": "failed",
+          "previousName": null,
+          "intendedName": "Track",
+          "intendedColor": "neutral",
+          "actualName": null,
+          "actualColor": null,
+          "message": "Skipped track color assignment.",
+          "reason": "Color assignment skipped because category is unknown."
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Track",
+        "intendedColor": null,
+        "actualName": "Track",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": false,
+        "status": "failed",
+        "previousName": null,
+        "intendedName": "Track",
+        "intendedColor": "neutral",
+        "actualName": null,
+        "actualColor": null,
+        "message": "Skipped track color assignment.",
+        "reason": "Color assignment skipped because category is unknown."
+      },
+      "ok": false,
+      "completedActions": 1,
+      "failedActions": 1,
+      "summary": "Completed 1/2 actions; 1 failed."
+    },
+    {
+      "originalFilename": "stem 3.wav",
+      "cleanTrackName": "Stem",
+      "assignedColor": "neutral",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Stem",
+          "intendedColor": null,
+          "actualName": "Stem",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": false,
+          "status": "failed",
+          "previousName": null,
+          "intendedName": "Stem",
+          "intendedColor": "neutral",
+          "actualName": null,
+          "actualColor": null,
+          "message": "Skipped track color assignment.",
+          "reason": "Color assignment skipped because category is unknown."
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Stem",
+        "intendedColor": null,
+        "actualName": "Stem",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": false,
+        "status": "failed",
+        "previousName": null,
+        "intendedName": "Stem",
+        "intendedColor": "neutral",
+        "actualName": null,
+        "actualColor": null,
+        "message": "Skipped track color assignment.",
+        "reason": "Color assignment skipped because category is unknown."
+      },
+      "ok": false,
+      "completedActions": 1,
+      "failedActions": 1,
+      "summary": "Completed 1/2 actions; 1 failed."
+    },
+    {
+      "originalFilename": "print.wav",
+      "cleanTrackName": "Imported Audio",
+      "assignedColor": "neutral",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Imported Audio",
+          "intendedColor": null,
+          "actualName": "Imported Audio",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": false,
+          "status": "failed",
+          "previousName": null,
+          "intendedName": "Imported Audio",
+          "intendedColor": "neutral",
+          "actualName": null,
+          "actualColor": null,
+          "message": "Skipped track color assignment.",
+          "reason": "Color assignment skipped because category is unknown."
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Imported Audio",
+        "intendedColor": null,
+        "actualName": "Imported Audio",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": false,
+        "status": "failed",
+        "previousName": null,
+        "intendedName": "Imported Audio",
+        "intendedColor": "neutral",
+        "actualName": null,
+        "actualColor": null,
+        "message": "Skipped track color assignment.",
+        "reason": "Color assignment skipped because category is unknown."
+      },
+      "ok": false,
+      "completedActions": 1,
+      "failedActions": 1,
+      "summary": "Completed 1/2 actions; 1 failed."
+    },
+    {
+      "originalFilename": "lead_vox_fx.wav",
+      "cleanTrackName": "Lead Vox FX",
+      "assignedColor": "blue",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Lead Vox FX",
+          "intendedColor": null,
+          "actualName": "Lead Vox FX",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Lead Vox FX",
+          "intendedColor": "blue",
+          "actualName": null,
+          "actualColor": "blue",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Lead Vox FX",
+        "intendedColor": null,
+        "actualName": "Lead Vox FX",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Lead Vox FX",
+        "intendedColor": "blue",
+        "actualName": null,
+        "actualColor": "blue",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "bass_synth.wav",
+      "cleanTrackName": "Bass Synth",
+      "assignedColor": "purple",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Bass Synth",
+          "intendedColor": null,
+          "actualName": "Bass Synth",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Bass Synth",
+          "intendedColor": "purple",
+          "actualName": null,
+          "actualColor": "purple",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Bass Synth",
+        "intendedColor": null,
+        "actualName": "Bass Synth",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Bass Synth",
+        "intendedColor": "purple",
+        "actualName": null,
+        "actualColor": "purple",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    },
+    {
+      "originalFilename": "snare_room.wav",
+      "cleanTrackName": "Snare Room",
+      "assignedColor": "red",
+      "actions": [
+        {
+          "type": "rename_track",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Snare Room",
+          "intendedColor": null,
+          "actualName": "Snare Room",
+          "actualColor": null,
+          "message": "Renamed selected Logic track.",
+          "reason": null
+        },
+        {
+          "type": "set_track_color",
+          "ok": true,
+          "status": "succeeded",
+          "previousName": null,
+          "intendedName": "Snare Room",
+          "intendedColor": "red",
+          "actualName": null,
+          "actualColor": "red",
+          "message": "Assigned Logic track color.",
+          "reason": null
+        }
+      ],
+      "renameTrack": {
+        "type": "rename_track",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Snare Room",
+        "intendedColor": null,
+        "actualName": "Snare Room",
+        "actualColor": null,
+        "message": "Renamed selected Logic track.",
+        "reason": null
+      },
+      "setTrackColor": {
+        "type": "set_track_color",
+        "ok": true,
+        "status": "succeeded",
+        "previousName": null,
+        "intendedName": "Snare Room",
+        "intendedColor": "red",
+        "actualName": null,
+        "actualColor": "red",
+        "message": "Assigned Logic track color.",
+        "reason": null
+      },
+      "ok": true,
+      "completedActions": 2,
+      "failedActions": 0,
+      "summary": "All actions completed successfully."
+    }
+  ],
+  "failures": [
+    {
+      "itemIndex": 9,
+      "originalFilename": "mystery_audio_12.wav",
+      "action": "set_track_color",
+      "reason": "Color assignment skipped because category is unknown."
+    },
+    {
+      "itemIndex": 10,
+      "originalFilename": "audio_01.wav",
+      "action": "set_track_color",
+      "reason": "Color assignment skipped because category is unknown."
+    },
+    {
+      "itemIndex": 11,
+      "originalFilename": "track final.wav",
+      "action": "set_track_color",
+      "reason": "Color assignment skipped because category is unknown."
+    },
+    {
+      "itemIndex": 12,
+      "originalFilename": "stem 3.wav",
+      "action": "set_track_color",
+      "reason": "Color assignment skipped because category is unknown."
+    },
+    {
+      "itemIndex": 13,
+      "originalFilename": "print.wav",
+      "action": "set_track_color",
+      "reason": "Color assignment skipped because category is unknown."
+    }
+  ],
+  "summary": "Processed 17 items: 17 renames succeeded, 12 color changes succeeded, 5 failures."
+}

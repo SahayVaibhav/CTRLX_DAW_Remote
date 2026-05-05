@@ -1,0 +1,168 @@
+{
+  "source": "import_automation_layout",
+  "orderedItems": [
+    {
+      "originalFilename": "01_KICK_IN.wav",
+      "normalizedFilename": "01 kick in",
+      "detectedCategory": "drums",
+      "cleanTrackName": "Kick In",
+      "assignedColor": "red",
+      "confidence": "high",
+      "suggestedOrder": 1,
+      "suggestedGroupLabel": "Drums",
+      "suggestedBusLabel": "Drum Bus",
+      "suggestedStackLabel": "Drum Stack"
+    },
+    {
+      "originalFilename": "snare_room.wav",
+      "normalizedFilename": "snare room",
+      "detectedCategory": "drums",
+      "cleanTrackName": "Snare Room",
+      "assignedColor": "red",
+      "confidence": "medium",
+      "suggestedOrder": 2,
+      "suggestedGroupLabel": "Drums",
+      "suggestedBusLabel": "Drum Bus",
+      "suggestedStackLabel": "Drum Stack"
+    },
+    {
+      "originalFilename": "snare_top_take03.wav",
+      "normalizedFilename": "snare top take03",
+      "detectedCategory": "drums",
+      "cleanTrackName": "Snare Top",
+      "assignedColor": "red",
+      "confidence": "high",
+      "suggestedOrder": 3,
+      "suggestedGroupLabel": "Drums",
+      "suggestedBusLabel": "Drum Bus",
+      "suggestedStackLabel": "Drum Stack"
+    },
+    {
+      "originalFilename": "BASS_DI_v4.aif",
+      "normalizedFilename": "bass di v4",
+      "detectedCategory": "bass",
+      "cleanTrackName": "Bass DI",
+      "assignedColor": "green",
+      "confidence": "high",
+      "suggestedOrder": 4,
+      "suggestedGroupLabel": "Bass",
+      "suggestedBusLabel": "Bass Bus",
+      "suggestedStackLabel": null
+    },
+    {
+      "originalFilename": "rhythm_gtr_L_01.wav",
+      "normalizedFilename": "rhythm gtr l 01",
+      "detectedCategory": "guitar",
+      "cleanTrackName": "Rhythm Gtr L",
+      "assignedColor": "yellow",
+      "confidence": "high",
+      "suggestedOrder": 5,
+      "suggestedGroupLabel": "Guitars",
+      "suggestedBusLabel": "Guitar Bus",
+      "suggestedStackLabel": "Guitar Stack"
+    },
+    {
+      "originalFilename": "Rhodes_Main.wav",
+      "normalizedFilename": "rhodes main",
+      "detectedCategory": "keys",
+      "cleanTrackName": "Rhodes Main",
+      "assignedColor": "cyan",
+      "confidence": "high",
+      "suggestedOrder": 6,
+      "suggestedGroupLabel": "Keys",
+      "suggestedBusLabel": "Keys Bus",
+      "suggestedStackLabel": "Keys Stack"
+    },
+    {
+      "originalFilename": "synth_pad_wide_02.wav",
+      "normalizedFilename": "synth pad wide 02",
+      "detectedCategory": "synth",
+      "cleanTrackName": "Synth Pad Wide",
+      "assignedColor": "purple",
+      "confidence": "high",
+      "suggestedOrder": 7,
+      "suggestedGroupLabel": "Synths",
+      "suggestedBusLabel": "Synth Bus",
+      "suggestedStackLabel": "Synth Stack"
+    },
+    {
+      "originalFilename": "Lead_Vox_Final_02.wav",
+      "normalizedFilename": "lead vox final 02",
+      "detectedCategory": "vocals",
+      "cleanTrackName": "Lead Vox",
+      "assignedColor": "blue",
+      "confidence": "high",
+      "suggestedOrder": 8,
+      "suggestedGroupLabel": "Vocals",
+      "suggestedBusLabel": "Vocal Bus",
+      "suggestedStackLabel": "Vocal Stack"
+    },
+    {
+      "originalFilename": "big_riser_fx_07.wav",
+      "normalizedFilename": "big riser fx 07",
+      "detectedCategory": "fx",
+      "cleanTrackName": "Big Riser FX",
+      "assignedColor": "pink",
+      "confidence": "high",
+      "suggestedOrder": 9,
+      "suggestedGroupLabel": "FX",
+      "suggestedBusLabel": "FX Bus",
+      "suggestedStackLabel": "FX Stack"
+    },
+    {
+      "originalFilename": "room_ambience_stereo.wav",
+      "normalizedFilename": "room ambience stereo",
+      "detectedCategory": "ambience",
+      "cleanTrackName": "Room Ambience",
+      "assignedColor": "gray",
+      "confidence": "high",
+      "suggestedOrder": 10,
+      "suggestedGroupLabel": "Ambience",
+      "suggestedBusLabel": "Ambience Bus",
+      "suggestedStackLabel": "Ambience Stack"
+    }
+  ],
+  "groups": [
+    {
+      "category": "drums",
+      "groupLabel": "Drums",
+      "order": 10,
+      "busLabel": "Drum Bus",
+      "stackLabel": "Drum Stack",
+      "items": [
+        {
+          "originalFilename": "01_KICK_IN.wav",
+          "normalizedFilename": "01 kick in",
+          "detectedCategory": "drums",
+          "cleanTrackName": "Kick In",
+          "assignedColor": "red",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "category": "bass",
+      "groupLabel": "Bass",
+      "order": 30,
+      "busLabel": "Bass Bus",
+      "stackLabel": null,
+      "items": [
+        {
+          "originalFilename": "BASS_DI_v4.aif",
+          "normalizedFilename": "bass di v4",
+          "detectedCategory": "bass",
+          "cleanTrackName": "Bass DI",
+          "assignedColor": "green",
+          "confidence": "high"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Drums are suggested first, followed by percussion and bass.",
+    "Guitars, keys, and synths are grouped through the middle of the session.",
+    "Vocals are grouped after instruments for a cleaner working layout.",
+    "FX and ambience are suggested later in the session.",
+    "Grouping, bus labels, and stack labels are suggestion-only in this phase."
+  ]
+}

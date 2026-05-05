@@ -1,0 +1,25 @@
+{
+  "name": "@ctrlx/host",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "main.cjs",
+  "imports": {
+    "#protocol": "./dist/packages/protocol/src/index.js"
+  },
+  "scripts": {
+    "build": "npm run build --workspace @ctrlx/protocol && tsc -p tsconfig.json",
+    "dev": "npm run build && electron ."
+  },
+  "dependencies": {
+    "@ctrlx/protocol": "0.1.0",
+    "jszip": "^3.10.1",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/ws": "^8.5.13",
+    "electron": "^36.1.0",
+    "typescript": "^5.8.3"
+  }
+}

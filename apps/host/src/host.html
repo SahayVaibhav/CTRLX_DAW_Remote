@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTRLX Host</title>
+    <link rel="stylesheet" href="./host.css" />
+  </head>
+  <body>
+    <main class="host-shell">
+      <section class="hero">
+        <p class="eyebrow">CTRLX Remote Host</p>
+        <h1>Desktop stream for Logic Pro</h1>
+        <p class="copy">
+          CTRLX will capture your main display, pair one viewer, and attach BlackHole audio when it is available.
+        </p>
+        <div class="hero-actions">
+          <button id="heroStartCaptureButton" class="capture-button hero-capture-button" type="button">
+            Start Capture
+          </button>
+          <button id="heroStopCaptureButton" class="capture-button secondary-capture-button" type="button">
+            Stop Capture
+          </button>
+        </div>
+      </section>
+
+      <section class="status-grid">
+        <article class="card">
+          <span class="label">Session Code</span>
+          <strong id="sessionCode" class="code">------</strong>
+          <p id="hostAddress" class="meta">Host: --</p>
+        </article>
+
+        <article class="card">
+          <span class="label">Stream State</span>
+          <strong id="captureStatus" class="value">Idle</strong>
+          <p id="audioDevice" class="meta">Audio: searching</p>
+        </article>
+
+        <article class="card">
+          <span class="label">Viewer</span>
+          <strong id="viewerStatus" class="value">Waiting</strong>
+          <p id="message" class="meta">No paired viewer yet.</p>
+          <div class="viewer-actions">
+            <button id="startCaptureButton" class="capture-button" type="button">Start Capture</button>
+            <button id="stopCaptureButton" class="capture-button secondary-capture-button" type="button">Stop Capture</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="card logs">
+        <div class="logs-head">
+          <span class="label">Host Activity</span>
+        </div>
+        <div id="logList" class="log-list"></div>
+      </section>
+    </main>
+
+    <script>
+      const electron = window.require ? window.require("electron") : null;
+      const ipcRenderer = electron ? electron.ipcRenderer : null;
+      const sessionCodeEl = document.getElementById("sessionCode");
+      const hostAddressEl = document.getElementById("hostAddress");
+      const captureStatusEl = document.getElementById("captureStatus");
+      const audioDeviceEl = document.getElementById("audioDevice");
+      const viewerStatusEl = document.getElementById("viewerStatus");
+      const messageEl = document.getElementById("message");
+      const logListEl = document.getElementById("logList");
+      const heroStartCaptureButton = document.getElementById("heroStartCaptureButton");
+      const heroStopCaptureButton = document.getElementById("heroStopCaptureButton");
+
+      let peerConnection = null;
+      let captureStream = null;
+
+      function render(state) {
+        if (!state) return;
+        if (sessionCodeEl) sessionCodeEl.textContent = state.sessionCode;
+        if (hostAddressEl) hostAddressEl.textContent = `Host: ${state.hostAddress}:${state.port}`;
+        if (captureStatusEl) captureStatusEl.textContent = state.captureStatus;
+        if (audioDeviceEl) audioDeviceEl.textContent = `Audio: ${state.audioDeviceName || "BlackHole not detected"}`;
+        if (viewerStatusEl) viewerStatusEl.textContent = state.activeClientId ? "Paired" : "Waiting";
+        if (messageEl) messageEl.textContent = state.message || "";
+        if (logListEl) {
+          logListEl.innerHTML = (state.logs || [])
+            .map((log) => `<div class="log-item"><strong>${log.level.toUpperCase()}</strong> ${log.message}</div>`)
+            .join("");
+        }
+
+        const isCapturing = state.captureStatus === "capturing" || state.captureStatus === "streaming" || state.captureStatus === "requesting-permissions";
+        const buttons = document.querySelectorAll("#startCaptureButton, #heroStartCaptureButton, #stopCaptureButton, #heroStopCaptureButton");
+        buttons.forEach((button) => {
+          if (!(button instanceof HTMLButtonElement)) {
+            return;
+          }
+
+          if (button.id.includes("stop")) {
+            button.disabled = !isCapturing;
+          } else {
+            button.disabled = isCapturing;
+          }
+        });
+      }
+
+      function teardownPeer(reason) {
+        if (peerConnection) {
+          peerConnection.onicecandidate = null;
+          peerConnection.onconnectionstatechange = null;
+          peerConnection.close();
+          peerConnection = null;
+        }
+
+        if (reason && ipcRenderer) {
+          ipcRenderer.send("host:log", {
+            level: "info",
+            message: reason
+          });
+        }
+      }
+
+      function stopCapture(reason = "Capture stopped from the host.") {
+        if (captureStream) {
+          captureStream.getTracks().forEach((track) => track.stop());
+          captureStream = null;
+        }
+
+        teardownPeer(reason);
+
+        if (ipcRenderer) {
+          ipcRenderer.send("host:set-media-state", {
+            captureStatus: "idle",
+            message: "Capture stopped. Ready to start again."
+          });
+        }
+      }
+
+      async function ensureCapture() {
+        if (!ipcRenderer) {
+          throw new Error("CTRLX host IPC is unavailable.");
+        }
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getDisplayMedia) {
+          throw new Error("Screen capture API is unavailable in this host window.");
+        }
+        if (captureStream) {
+          return captureStream;
+        }
+
+        ipcRenderer.send("host:set-media-state", {
+          captureStatus: "requesting-permissions",
+          message: "Requesting screen recording and audio capture permissions."
+        });
+
+        const displayStream = await navigator.mediaDevices.getDisplayMedia({
+          video: { frameRate: { ideal: 30, max: 30 } },
+          audio: false
+        });
+
+        const devices = await navigator.mediaDevices.enumerateDevices();
+        const blackHole = devices.find((device) =>
+          device.kind === "audioinput" && device.label.toLowerCase().includes("blackhole")
+        );
+
+        let audioTracks = [];
+        if (blackHole) {
+          const audioStream = await navigator.mediaDevices.getUserMedia({
+            audio: {
+              deviceId: { exact: blackHole.deviceId },
+              autoGainControl: false,
+              echoCancellation: false,
+              noiseSuppression: false
+            }
+          });
+          audioTracks = audioStream.getAudioTracks();
+          ipcRenderer.send("host:set-media-state", {
+            audioDeviceName: blackHole.label || "BlackHole",
+            message: "BlackHole audio attached."
+          });
+        } else {
+          ipcRenderer.send("host:log", {
+            level: "warn",
+            message: "BlackHole audio input not found. Video will still stream."
+          });
+          ipcRenderer.send("host:set-media-state", {
+            audioDeviceName: null,
+            message: "BlackHole device not found. Streaming display without remote audio."
+          });
+        }
+
+        captureStream = new MediaStream([
+          ...displayStream.getVideoTracks(),
+          ...audioTracks
+        ]);
+
+        const videoTrack = captureStream.getVideoTracks()[0];
+        if (videoTrack) {
+          videoTrack.addEventListener("ended", () => {
+            ipcRenderer.send("host:log", {
+              level: "warn",
+              message: "Screen capture stopped on the host."
+            });
+            stopCapture("Screen capture stopped.");
+          });
+        }
+
+        ipcRenderer.send("host:set-media-state", {
+          captureStatus: "capturing",
+          message: "Display capture ready."
+        });
+
+        return captureStream;
+      }
+
+      async function startPeerSession() {
+        if (!ipcRenderer) return;
+
+        const stream = await ensureCapture();
+        if (peerConnection) {
+          peerConnection.close();
+        }
+
+        peerConnection = new RTCPeerConnection();
+        stream.getTracks().forEach((track) => peerConnection.addTrack(track, stream));
+
+        peerConnection.onicecandidate = (event) => {
+          if (!event.candidate) return;
+          ipcRenderer.send("host:send-signal", {
+            kind: "ice_candidate",
+            candidate: event.candidate.toJSON()
+          });
+        };
+
+        peerConnection.onconnectionstatechange = () => {
+          const peerState = peerConnection ? peerConnection.connectionState : "new";
+          ipcRenderer.send("host:log", { level: "info", message: `Peer state ${peerState}` });
+          if (peerState === "connected") {
+            ipcRenderer.send("host:set-media-state", {
+              captureStatus: "streaming",
+              message: "Viewer connected to live stream."
+            });
+          }
+        };
+
+        const offer = await peerConnection.createOffer({
+          offerToReceiveAudio: false,
+          offerToReceiveVideo: false
+        });
+        await peerConnection.setLocalDescription(offer);
+        ipcRenderer.send("host:send-signal", {
+          kind: "offer",
+          sdp: offer
+        });
+      }
+
+      async function handleStartCapture() {
+        if (!ipcRenderer) {
+          return;
+        }
+
+        const snapshot = await ipcRenderer.invoke("host:get-snapshot");
+        if (!snapshot.activeClientId) {
+          ipcRenderer.send("host:set-media-state", {
+            captureStatus: "idle",
+            message: "Pair the viewer first, then click Start Capture again."
+          });
+          return;
+        }
+
+        try {
+          await startPeerSession();
+        } catch (error) {
+          ipcRenderer.send("host:log", {
+            level: "error",
+            message: error instanceof Error ? error.message : "Unable to start host stream."
+          });
+          ipcRenderer.send("host:set-media-state", {
+            captureStatus: "error",
+            message: error instanceof Error ? error.message : "Unable to start host stream."
+          });
+        }
+      }
+
+      async function handleStopCapture() {
+        stopCapture();
+      }
+
+      window.__ctrlxStartCapture = handleStartCapture;
+      window.__ctrlxStopCapture = handleStopCapture;
+
+      if (ipcRenderer) {
+        ipcRenderer.invoke("host:get-snapshot").then(render);
+        ipcRenderer.on("host:state", (_event, state) => render(state));
+        ipcRenderer.on("host:signal", async (_event, payload) => {
+          if (!peerConnection) return;
+          try {
+            if (payload.kind === "answer") {
+              await peerConnection.setRemoteDescription(payload.sdp);
+              return;
+            }
+            if (payload.kind === "ice_candidate") {
+              await peerConnection.addIceCandidate(payload.candidate);
+            }
+          } catch (error) {
+            ipcRenderer.send("host:log", {
+              level: "error",
+              message: error instanceof Error ? error.message : "Failed to process remote signal."
+            });
+          }
+        });
+
+        document.addEventListener("click", (event) => {
+          const target = event.target;
+          if (!(target instanceof Element)) {
+            return;
+          }
+
+          const button = target.closest("#startCaptureButton, #heroStartCaptureButton, #stopCaptureButton, #heroStopCaptureButton");
+          if (!button) {
+            return;
+          }
+
+          if (button.id.includes("stop")) {
+            void handleStopCapture();
+            return;
+          }
+
+          void handleStartCapture();
+        });
+      }
+    </script>
+  </body>
+</html>
